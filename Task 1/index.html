@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Task 1</title>
+</head>
+
+<body>
+    <!-- Comments -->
+     <!--<header>: Represents the header of a section or page. Typically contains introductory content or navigational links-->
+    <header>
+        <h1>Learning HTML</h1>
+        <!--<nav>: Defines a set of navigation links-->
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="headings">
+        <h1>Heading tag 1</h1>
+        <h2>Heading tag 2</h2>
+        <h3>Heading tag 3</h3>
+        <h4>Heading tag 4</h4>
+        <h5>Heading tag 5</h5>
+        <h6>Heading tag 6</h6>
+    </section>
+
+    <section id="paragraphs">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, quae!</p>
+        <p>This is a <b>bold</b> and <strong>strong</strong> text example.</p>
+        <p>This is an <i>italic</i> and <em>emphasized</em> text example.</p>
+        <p>This is an <u>underlined</u> text example.</p>
+        <p>This is a <s>strikethrough</s> and <del>deleted</del> text example.</p>
+        <p>Chemical formula: H<sub>2</sub>O (water)</p>
+        <p>Exponent: 10<sup>2</sup> (100)</p>
+        <p><small>This is smaller text</small></p>
+        <p><code>console.log('Hello, world!');</code></p>
+        <pre>This is 
+                    preformatted text.
+        Spaces and line 
+                breaks are preserved.</pre>
+        <blockquote>
+            "This is a blockquote from another source."
+        </blockquote>
+        <p><cite>This is the title of a work</cite></p>
+        <p>Use <abbr title="HyperText Markup Language">HTML</abbr> to format text.</p>
+        <p><mark>This text is highlighted</mark></p>
+        <p><ins>This text is inserted</ins></p>
+        <p>Variable example: <var>a</var> + <var>b</var> = 2</p>
+        <p>The current date is <time datetime="2024-06-20">June 20, 2024</time></p>
+    </section>
+
+    <section id="links">
+        <p>This is a <a href="https://www.google.com/">hyperlink</a> to google</p>
+
+        <!--
+        target: Specifies where to open the linked document.
+            _self (default): Opens the link in the same window/tab.
+            _blank: Opens the link in a new window/tab.
+            _parent: Opens the link in the parent frame.
+            _top: Opens the link in the full body of the window.
+        -->
+        <a href="https://www.google.com" target="_blank">Google.com</a>
+
+        <!--
+        rel: Specifies the relationship between the current document and the linked document. Common values include:
+            nofollow: Instructs search engines not to follow the link.
+            noopener: Prevents the new page from accessing the window.opener property.
+            noreferrer: Prevents the browser from sending the referrer header.
+        -->
+        <a href="https://www.google.com" target="_blank" rel="search engine">Google.com</a>
+
+        <a href="https://www.google.com"
+            title="Go to Google.com">Google.com</a><!--title: Provides additional information about the link, which often appears as a tooltip when the mouse hovers over the link.-->
+
+        <a href="path/to/file.zip" download="example-file.zip">Download
+            File</a><!--download: Specifies that the target will be downloaded when the link is clicked. The value of the attribute will be the name of the downloaded file.-->
+
+        <a href="https://www.google.com" type="text/html">Google.com</a>
+        <!--type: Specifies the MIME type of the linked document.-->
+
+        <a href="https://www.google.com" hreflang="en">Google.com</a>
+        <!--hreflang: Specifies the language of the linked document.-->
+
+        <a href="https://www.google.com" ping="https://www.google.com/ping">Google.com</a>
+        <!--ping: Specifies a space-separated list of URLs to be notified if the user follows the hyperlink.-->
+
+        <!--Here is a complete example demonstrating all of these attributes:-->
+        <br><a href="https://www.google.com" target="_blank" rel="noopener noreferrer" title="Go to Google"
+            download="google-homepage.html" type="text/html" hreflang="en" ping="https://www.google.com/ping">
+            Visit Google
+        </a>
+    </section>
+
+    <sectin id="images">
+        <!--src: Specifies the path to the image file. This attribute is required.
+        alt: Provides alternative text for the image if it cannot be displayed. This is useful for accessibility and SEO.
+        width: Specifies the width of the image. Can be in pixels or percentage.
+        height: Specifies the height of the image. Can be in pixels or percentage.
+        title: Provides additional information about the image. Often displayed as a tooltip when the mouse hovers over the image.
+        loading: Specifies the loading behavior of the image. The values can be lazy (defer loading the image until it is in the viewport) or eager (load the image immediately).
+        srcset: Specifies a list of image sources for responsive images. Allows the browser to choose the best image based on the screen size and resolution.
+        sizes: Specifies the sizes of the image for different screen sizes. Used in conjunction with srcset.
+        usemap: Specifies an image map to be used with the image.
+        ismap: Indicates that the image is part of a server-side image map.-->
+        <h2>Image Example</h2>
+
+        <!-- Basic Image with Alt Text -->
+        <img src="image.jpg" alt="Example Image's alternative text" /><br>
+
+        <!-- Image with Width and Height -->
+        <img src="https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?q=80&w=889&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="With fixed height and width" width="300" height="200" /><br>
+
+        <!-- Image with Title -->
+        <img src="https://images.unsplash.com/photo-1621839673705-6617adf9e890?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image with title" width="300" title="This is an example image" /><br>
+
+        <!-- Lazy Loading Image -->
+        <img src="https://images.unsplash.com/photo-1669023414180-4dcf35d943e1?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Lazy Loading Image" width="300" loading="lazy" /><br>
+
+        <img src="https://images.unsplash.com/photo-1718889874468-3a56b84bb2e7?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        srcset="https://images.unsplash.com/photo-1718489211836-65a20ad6bd8d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 300w, 
+        https://images.unsplash.com/photo-1495615080073-6b89c9839ce0?q=80&w=906&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 600w, 
+        https://images.unsplash.com/photo-1593458819983-23713d2015e8?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 1200w" 
+        sizes="(max-width: 600px) 480px, 
+            (max-width: 1200px) 800px, 
+            1200px" 
+        alt="Responsive Example Image">
+        <!--1. Image-Small (300w)
+                Width: 300px
+                Height: Choose a height that maintains the aspect ratio of the image. For example, if the aspect ratio is 4:3, the height would be 225px.
+            2. Image-Medium (600w)
+                Width: 600px
+                Height: Maintain the aspect ratio. If the aspect ratio is 4:3, the height would be 450px.
+            3. Image-Large (1200w)
+                Width: 1200px
+                Height: Maintain the aspect ratio. If the aspect ratio is 4:3, the height would be 900px.
+            
+        (max-width: 600px) 480px: For viewports up to 600 pixels wide, use an image that will be displayed at 480 pixels wide.
+        (max-width: 1200px) 800px: For viewports up to 1200 pixels wide, use an image that will be displayed at 800 pixels wide.
+        1200px: For viewports wider than 1200 pixels, use an image that will be displayed at 1200 pixels wide.-->
+    </sectin>
+
+    <section id="lists">
+        <p><cite>Unordered List Example</cite></p>
+        <ul type="disc">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+
+        <ul type="circle">
+            <li>Item A</li>
+            <li>Item B</li>
+            <li>Item C</li>
+        </ul>
+
+        <ul type="square">
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+        </ul>
+        <p><cite>Ordered List Example</cite></p>
+        <ol type="1">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+
+        <ol type="A">
+            <li>Item A</li>
+            <li>Item B</li>
+            <li>Item C</li>
+        </ol>
+
+        <ol type="a">
+            <li>item a</li>
+            <li>item b</li>
+            <li>item c</li>
+        </ol>
+
+        <ol type="I">
+            <li>Item I</li>
+            <li>Item II</li>
+            <li>Item III</li>
+        </ol>
+
+        <ol type="i">
+            <li>item i</li>
+            <li>item ii</li>
+            <li>item iii</li>
+        </ol>
+
+        <ol type="1" start="5">
+            <li>Item 5</li>
+            <li>Item 6</li>
+            <li>Item 7</li>
+        </ol>
+
+        <ol type="A" reversed>
+            <li>Item Z</li>
+            <li>Item Y</li>
+            <li>Item X</li>
+        </ol>
+    </section>
+
+    <section id="tables">
+        <table border="2" cellpadding="10" cellspacing="0">
+            <caption>Monthly Savings</caption> <!--<caption>: Adds a caption to the table ("Monthly Savings")-->
+            <colgroup>  <!--<colgroup> and <col>: Style the columns. The first column has a light gray background, and the next two have a white background-->
+                <col span="1" style="background-color:lightgray">   <!--span: Specifies the number of columns the group should span-->
+                <col span="2" style="background-color:white">
+            </colgroup>
+            <thead> <!--<thead>: Contains the table header row with three headers-->
+                <tr>
+                    <th>Month</th>  <!--<th>: Defines a header cell in the table. The text in <th> is bold and centered by default-->
+                    <th>Savings</th>
+                    <th>Expenses</th>
+                </tr>
+            </thead>
+            <tbody> <!--<tbody>: Contains the body of the table with data rows-->
+                <tr> <!--<tr>: Defines a row in the table-->
+                    <td>January</td> <!--<td>: Defines a standard data cell in the table-->
+                    <td>$100</td>
+                    <td>$50</td>
+                </tr>
+                <tr>
+                    <td>February</td>
+                    <td>$150</td>
+                    <td>$60</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">March</td> <!--rowspan: Specifies the number of rows a header cell should span-->
+                    <td>$200</td>
+                    <td>$70</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Combined Savings and Expenses</td>  <!--colspan: Specifies the number of columns a header cell should span-->
+                </tr>
+            </tbody>
+            <tfoot> <!--<tfoot>: Contains the footer row with totals-->
+                <tr>
+                    <th>Total</th>
+                    <td>$450</td>
+                    <td>$180</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <section id="forms">
+        <form action="/submit_form" method="post">
+            <!-- Text input -->
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" required><br><br>
+
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" required><br><br>
+
+            <!-- Email Input -->
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <!-- Date Input -->
+            <label for="bdate">Birthdate:</label><br>
+            <input type="date" id="bdate" name="bdate" required><br><br>
+
+            <!-- Number Input -->
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age" min="0" max="120" required><br><br>
+
+            <!-- Telephone Input -->
+            <label for="phone">Phone number:</label><br>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                placeholder="123-456-7890"><br><br>
+
+            <!-- Password input -->
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <!-- Radio buttons -->
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+
+            <!-- Checkboxes -->
+            <label>Hobbies:</label><br>
+            <input type="checkbox" id="hobby1" name="hobbies" value="reading">
+            <label for="hobby1">Reading</label><br>
+            <input type="checkbox" id="hobby2" name="hobbies" value="traveling">
+            <label for="hobby2">Traveling</label><br>
+            <input type="checkbox" id="hobby3" name="hobbies" value="gaming">
+            <label for="hobby3">Gaming</label><br>
+            <input type="checkbox" id="hobby4" name="hobbies" value="sports">
+            <label for="hobby4">Sports</label><br><br>
+
+            <!-- Textarea -->
+            <label for="bio">Bio:</label><br>
+            <textarea id="bio" name="bio" rows="4" cols="50"></textarea><br><br>
+
+            <!-- Select -->
+            <label for="country">Country:</label><br>
+            <select id="country" name="country">
+                <option value="ind">India</option>
+                <option value="us">United States</option>
+                <option value="uk">United Kingdom</option>
+                <option value="ca">Canada</option>
+                <option value="au">Australia</option>
+            </select><br><br>
+
+            <!-- URL Input -->
+            <label for="website">Website:</label><br>
+            <input type="url" id="website" name="website" placeholder="https://example.com"><br><br>
+
+            <!-- Range Input -->
+            <label for="vol">Volume:</label><br>
+            <input type="range" id="vol" name="vol" min="0" max="100"><br><br>
+
+            <!-- Color Input -->
+            <label for="favcolor">Favorite color:</label><br>
+            <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+
+            <!-- Search Input -->
+            <label for="search">Search:</label><br>
+            <input type="search" id="search" name="search" placeholder="Search..."><br><br>
+
+            <!-- Datetime-local Input -->
+            <label for="meeting">Meeting time:</label><br>
+            <input type="datetime-local" id="meeting" name="meeting"><br><br>
+
+            <!-- Submit button -->
+            <input type="submit" value="Submit">
+
+            <!-- Reset button -->
+            <button type="reset">Reset</button>
+        </form>
+    </section>
+
+    <section id="blocks">
+        <h3>Paragraph tag block vs Span tag block</h3>
+        <p style="background: aqua;">Lorem ipsum dolor sit amet.</p>
+        <span style="background: rgb(0, 255, 136);">Lorem ipsum dolor sit amet.</span><span
+            style="background: rgb(0, 42, 255);">Cumque dignissimos totam voluptatum voluptate!</span>
+    </section>
+
+    <section id="AudioMedia">
+        <h2>Audio Example</h2>
+        <!--src: Specifies the URL of the audio file.
+            controls: Displays the default audio controls (play, pause, etc.).
+            autoplay: Starts playing the audio as soon as it is ready.
+            loop: Repeats the audio after it ends.
+            muted: Mutes the audio.
+            preload: Specifies if and how the author thinks the audio should be loaded when the page loads. Values can be auto, metadata, or none.-->
+        <audio controls>
+            <source src="audio-file.mp3" type="audio/mpeg">
+            <source src="audio-file.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio src="audio-file.mp3" autoplay loop muted></audio>
+    </section>
+
+    <section id="VideoMedia">
+        <h2>Video Example</h2>
+        <!--src: Specifies the URL of the video file.
+            controls: Displays the default video controls (play, pause, volume, etc.).
+            autoplay: Starts playing the video as soon as it is ready.
+            loop: Repeats the video after it ends.
+            muted: Mutes the audio of the video.
+            preload: Specifies if and how the author thinks the video should be loaded when the page loads. Values can be auto, metadata, or none.
+            poster: Specifies an image to be shown while the video is downloading, or until the user hits the play button.
+            width and height: Specifies the width and height of the video player.-->
+        <video width="560" height="315" controls>
+            <source src="video-file.mp4" type="video/mp4">
+            <source src="video-file.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+        <video width="560" height="315" src="video-file.mp4" autoplay loop muted poster="poster-image.jpg"></video>
+    </section>
+
+    <section id="i_frame">
+        <h2>Embedded YouTube Video Using I-FRAME</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/AXoanErUNE8?si=F7shaM2ws4BYbz9E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </section>
+
+    <!--The <div> tag in HTML is a versatile and fundamental element used to group together and style content within a webpage. It is a block-level element and does not have any specific meaning on its own, serving primarily as a container for other HTML elements-->
+    <div>
+        <p>This is a div</p>
+    </div>
+
+    <!--<section>: Represents a generic section of a document. It is used to group content thematically-->
+    <section>
+        <p>This is a section</p>
+    </section>
+
+    <!--<article>: Represents a self-contained piece of content, such as a blog post, news article, or forum post-->
+    <article>
+        <p>This is an article</p>
+    </article>
+
+    <!--<aside>: Defines content that is tangentially related to the content around it. It is often presented as a sidebar-->
+    <aside>
+        <p>This is a sidebar.</p>
+    </aside>
+
+    <!--<footer>: Represents the footer of a section or page. Typically contains information about the author, copyright, links to terms of use, etc-->
+    <footer>
+        <p>2024 My Website</p>
+        <nav>
+            <li><a href="">Privacy</a></li>
+            <li><a href="">Terms and Conditions</a></li>
+        </nav>
+    </footer>
+</body>
+
+</html>
